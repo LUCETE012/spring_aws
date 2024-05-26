@@ -96,7 +96,7 @@ public class PostsApiControllerTest {
         Posts savedPosts = postsRepository.save(Posts.builder().title("title").content("content").author("author").build());
 
         Long updateId = savedPosts.getId();
-        String expectedTitle = "title2";
+        String expectedTitle = "expectesTitle";
         String expectedContent = "content2";
 
         PostsUpdateRequestDto requestDto = PostsUpdateRequestDto.builder().title(expectedTitle).content(expectedContent).build();
